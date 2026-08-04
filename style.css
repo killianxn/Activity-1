@@ -1,0 +1,201 @@
+.fredoka {
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+.gamja-flower-regular {
+    font-family: "Gamja Flower", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-image: url("assets/yellowgreenbg.jpg");
+    overflow: hidden;
+}
+/*fonts edits*/
+.name-header{
+    font-family: "Fredoka";
+    font-weight: 700;
+    font-size: 45px;
+    color: rgba(254, 242, 210);
+    -webkit-text-stroke: 2px rgba(131, 105, 62); 
+}
+.username-header{
+    font-family: "Gamja Flower";
+    font-size: 30px;
+    color: rgba(117, 19, 17);
+}
+.interest{
+    font-family: "Fredoka";
+    font-weight: 600;
+    font-size: 23px;
+    color: rgb(255, 246, 211);
+    text-shadow: 0 0 8px rgba(131, 105, 62);
+}
+
+
+/*image edits*/
+.icons{
+    height: 45px;
+    width: 45px;
+}
+.icon-home{
+    height: 30px;
+    width: 30px;
+}
+
+/*containers*/
+.center{
+    display: flex;
+    align-items: center;
+}
+.full-screen{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.main-container{
+    width: 700px;
+    height: 800px;
+    background-color: rgba(251, 245, 209);
+    border: 4px solid rgba(195, 72, 64);
+    outline: 4px solid rgba(132, 31, 28);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mini-container{
+    width: 670px;
+    height: 680px;
+    border: 3px solid rgba(98, 52, 8);
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.section-1{
+    width: 100%;
+    height: 100px;
+    border-bottom: 3px solid rgba(98, 52, 8);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: url("assets/greenpolka.jpeg");
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.section-1-1{
+    height: 55px;
+    width: 130px;
+    border: 3px solid rgba(96, 53, 0);
+    border-radius: 10px;
+    background-color: rgba(252, 245, 213);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-1-2{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.section-1-1-123{
+    height: 40px;
+    width: 40px;
+    border: 3px solid rgba(96, 53, 0);
+    border-radius: 10px;
+    background-color: rgba(240, 206, 84);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-2{
+    width: 100%;
+    height: 60px;
+    border-bottom: 3px solid rgba(98, 52, 8);
+    background-image: url("assets/orangeslant.jpeg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-3{
+    width: 100%;
+    height: 80px;
+    border-bottom: 3px solid rgba(98, 52, 8);
+    display: flex;
+    flex-direction: row;
+}
+.section-3-1{
+    width: 30%;
+    height: 100%;
+    background-image: url("assets/redstripe.jpeg");
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    border-right: 3px solid rgba(98, 52, 8);
+}
+.section-3-2{
+    width: 70%;
+    height: 100%;
+    background-image: url("assets/yellowstripe.jpeg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-3-2-1{
+    width: 93%;
+    height: 60%;
+    border: 3px solid rgba(98, 52, 8);
+    border-radius: 8px;
+    background-color: rgba(255, 243, 213);
+    display: flex;
+    flex-direction: row;
+}
+
+/*tabs trial*/
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
