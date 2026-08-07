@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lili's Portfolio</title>
+    <title>𑣲⋆ Lili's Corner</title>
+    <link rel="icon" type="image/png" href="assets/cat.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,9 +24,9 @@
                         <a href="https://killigfx.wordpress.com/" class="username-header">★ killigfx</a>
                     </div>
                     <div class="section-1-2">
-                        <div class="section-1-1-123"><img src="assets/heart.png" alt="back" class="icon-home"></div>
-                        <div class="section-1-1-123"><img src="assets/star.png" alt="home" class="icon-home"></div>
-                        <div class="section-1-1-123"><img src="assets/badge-dollar.png" alt="forward" class="icon-home"></div>
+                        <a href="https://github.com/killianxn" style="text-decoration: none;"><div class="section-1-1-123"><img src="assets/github.png" alt="back" class="icon-home"></div></a>
+                        <a href="https://www.facebook.com/lian.sandiego.752/" style="text-decoration: none;"><div class="section-1-1-123"><img src="assets/facebook-messenger.png" alt="home" class="icon-home"></div></a>
+                        <a href="https://www.paypal.me/killianxn"><div class="section-1-1-123"><img src="assets/paypal.png" alt="forward" class="icon-home"></div></a>
                     </div>
                 </div>
                 <div class="section-2">
@@ -33,13 +34,13 @@
                 </div>
                 <div class="section-3">
                     <div class="section-3-1">
-                        <div class="section-1-1-123"><img src="assets/angle-small-left.png" alt="back" class="icons"></div>
-                        <div class="section-1-1-123"><img src="assets/angle-small-right.png" alt="forward" class="icons"></div>
-                        <div class="section-1-1-123"><img src="assets/home.png" alt="home" class="icon-home"></div>
+                        <div class="section-1-1-123" onclick="changeTab(-1)" style="cursor: pointer;"><img src="assets/angle-small-left.png" alt="back" class="icons"></div>
+                        <div class="section-1-1-123" onclick="changeTab(1)" style="cursor: pointer;"><img src="assets/angle-small-right.png" alt="forward" class="icons"></div>
+                        <div class="section-1-1-123" onclick="location.reload()" style="cursor: pointer;"><img src="assets/home.png" alt="home" class="icon-home"></div>
                     </div>
                     <div class="section-3-2">
                         <div class="section-3-2-1">
-                            <div class="center" style="width: 90%; margin-left: 15px;"><p class="username-header">Lian Nicole F. San Diego</p></div>
+                            <div class="center" style="width: 88%; margin-left: 15px;"><p class="username-header">Lian Nicole F. San Diego</p></div>
                             <div class="center" style="justify-content: center;"><img src="assets/search.png" alt="search" class="icon-home"></div>
                         </div>
                     </div>
@@ -131,26 +132,105 @@
                         <div id="★ More" class="tabcontent">
                             <div class="section-4-3">
                                 <div class="section-4-3-1" style="border-bottom: 3px solid rgba(255, 243, 213);">
-                                    <div class="section-4-3-1-1">
-                                        <img src="assets/illu2.jpeg" alt="" class="illus">
+                                    <div class="section-4-3-1-1" style="border-right: 3px solid rgba(255, 243, 213);">
+                                        <img src="assets/illu2.jpeg" alt="" class="illus" style="margin-right: 10px;">
                                     </div>
                                     <div class="section-4-3-1-1">
                                         <p class="more-info">𖹭 Soft Skills</p>
                                         <ul class="infos" style="font-size: 20px; margin-top: -30px;">
-                                            <li>Attention to <u>details</u></li>
-                                            <li></li>
+                                            <div style="display: flex; flex-direction: row; gap: 50px;">
+                                                <div>
+                                                    <li>Attention to <u>details</u></li>
+                                                    <li>Leadership</li>
+                                                    <li>Creativity</li>
+                                                    <li>Ideation</li>
+                                                </div>
+                                                <div>
+                                                    <li>Time Management</li>
+                                                    <li>Basic Programming</li>
+                                                    <li>Fast Learner ★</li>
+                                                    <li>Digital <u>Illustration</u></li>
+                                                </div>
+                                            </div>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="section-4-3-1">
-
+                                    <div class="section-4-3-1-1" style="border-right: 3px solid rgba(255, 243, 213); width: 100%; height: fit-content;">
+                                        <p class="more-info" style="margin-top: -5px;">𖹭 Hobbies and Interests</p>
+                                        <ul class="infos" style="font-size: 20px; margin-top: -30px;">
+                                            <div style="display: flex; flex-direction: row; gap: 50px;">
+                                                <div>
+                                                    <li>Playing Games</li>
+                                                    <li>Crocheting ★</li>
+                                                    <li>Drawing</li>
+                                                    <li>Learning Choreos</li>
+                                                    <li>Spending Money ★</li>
+                                                </div>
+                                                <div style="margin-right: 20px;">
+                                                    <li>Cozy Games</li>
+                                                    <li>3d Illustration</li>
+                                                    <li>Game Development</li>
+                                                    <li>Robotics</li>
+                                                    <li><u>Pastry</u> Business</li>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                    <div class="section-4-3-1-1" style="margin: 10px 10px 10px 0;">
+                                        <img src="assets/illu3.jpeg" alt="" class="illus" style="height: 170px;">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
                         <div id="★ Contact" class="tabcontent">
-                            <h3>★ Contact</h3>
-                            <p>Tokyo is the capital of Japan.</p>
+                            <div class="section-4-3-1" style="margin: 20px;">
+                                <div class="section-4-3-1-1">
+                                    <p class="more-info" style="margin: -10px 0 0 ;">𖹭 Contact me here!</p>
+                                    <div class="contact-list">
+                                        <a href="tel:+639755266807" style="text-decoration: none;">
+                                        <div class="contact-row">
+                                            <img src="assets/phone-call.png" alt="" class="icon-home"> 
+                                            <p class="infos" style="font-size: 20px;">(0975) 526 6807</p>
+                                        </div>
+                                        </a>
+                                        <a href="mailto:liansandiego141@gmail.com" style="text-decoration: none;">
+                                        <div class="contact-row">
+                                            <img src="assets/google.png" alt="" class="icon-home">
+                                            <p class="infos" style="font-size: 20px;">liansandiego141<br>@gmail.com</p>
+                                        </div>
+                                        </a>
+                                        <a href="https://www.facebook.com/lian.sandiego.752/" style="text-decoration: none;">
+                                        <div class="contact-row">
+                                            <img src="assets/facebook-messenger.png" alt="" class="icon-home">
+                                            <p class="infos" style="font-size: 20px;">Lian San Diego</p>
+                                        </div>
+                                        </a>
+                                        <a href="https://www.paypal.me/killianxn" style="text-decoration: none;">
+                                        <div class="contact-row">
+                                            <img src="assets/paypal.png" alt="" class="icon-home">
+                                            <p class="infos" style="font-size: 20px;">Lian San Diego</p>
+                                        </div>
+                                        </a>
+                                        <a href="https://github.com/killianxn" style="text-decoration: none;">
+                                        <div class="contact-row">
+                                            <img src="assets/github.png" alt="" class="icon-home">
+                                            <p class="infos" style="font-size: 20px;">killianxn(kil)</p>
+                                        </div>
+                                        </a>
+                                        <a href="mailto:l.sandiego50453@mcc.edu.ph" style="text-decoration: none;">
+                                        <div class="contact-row">
+                                            <img src="assets/microsoft.png" alt="" class="icon-home">
+                                            <p class="infos" style="font-size: 20px;">l.sandiego50453<br>@mcc.edu.ph</p>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    <p class="infos" style="margin-left: 5px;"> .☘︎ ݁˖.☘︎ ݁˖.☘︎ ݁˖.☘︎ ݁˖.☘︎ ݁˖.☘︎ ݁˖.☘︎ ݁˖.☘︎ ݁˖.☘︎ ݁˖</p>
+                                </div>
+                            </div>
+                            <div style="position: relative;">
+                                <img src="assets/redcat.png" alt="" class="cat2">
+                            </div>
                         </div>  
                     </div>
                         
