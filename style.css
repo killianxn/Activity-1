@@ -13,7 +13,6 @@
 
 body {
     background-image: url("assets/yellowgreenbg.jpg");
-    overflow: hidden;
 }
 
 /*scrollbar edits*/
@@ -77,6 +76,7 @@ html::-webkit-scrollbar-thumb {
     font-family: "Gamja Flower";
     font-size: 25px;
     font-weight: 600px;
+    margin-top: -20px;
 }
 
 /*image edits*/
@@ -107,6 +107,14 @@ html::-webkit-scrollbar-thumb {
     pointer-events: none;
     height: 70px;
     width: 100%;
+}
+.cat2{
+    position: absolute;
+    top: -180px;
+    right:0;
+    pointer-events: none;
+    height: auto;
+    width: 215px;
 }
 .cat{
     height: 87px;
@@ -162,8 +170,8 @@ html::-webkit-scrollbar-thumb {
     width: 100%;
     height: 100px;
     border-bottom: 3px solid rgba(98, 52, 8);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
     background-image: url("assets/greenpolka.jpeg");
     display: flex;
     align-items: center;
@@ -194,6 +202,9 @@ html::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.section-1-1-123:hover {
+    transform: scale(1.1);
 }
 .section-2{
     width: 100%;
@@ -326,6 +337,7 @@ html::-webkit-scrollbar-thumb {
     border: 3px solid rgba(98, 52, 8);
     border-radius: 10px;
     position: fixed;
+    margin-top: 10px;
 }
 .section-4-3{
     display: flex;
@@ -343,11 +355,38 @@ html::-webkit-scrollbar-thumb {
     align-items: center;
     flex-direction: column;
 }
+.contact-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.contact-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 60px;
+    width: 200px;
+    background: rgba(241, 207, 84);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+    
+}
+.contact-row .infos {
+    color: rgba(117, 19, 17);
+    font-weight: 600;
+}
+.contact-row:hover {
+    transform: scale(1.1);
+}
 .section-5{
     height: 81px;
     width: 670px;
     background-image: url("assets/greenpolka.jpeg");
     border-top: 3px solid rgba(98, 52, 8);
     border-radius: 0 0 7px 7px;
-    position: fixed;
+    position: sticky;
 }
