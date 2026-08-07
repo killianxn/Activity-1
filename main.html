@@ -45,29 +45,118 @@
                     </div>
                 </div>
                 <div class="section-4">
-                    <h2>Tabs</h2>
-                    <p>Click on the buttons inside the tabbed menu:</p>
-
                     <div class="tab">
-                    <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-                    <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-                    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+                        <button class="tablinks active" onclick="openTab(event, '★ About Me', 'rgba(241, 207, 84)', 'rgba(117, 19, 17)')">★ About Me</button>
+                        <button class="tablinks" onclick="openTab(event, '★ Education', 'rgba(232, 175, 107)', 'rgba(117, 19, 17)')">★ Education</button>
+                        <button class="tablinks" onclick="openTab(event, '★ More', 'rgba(190, 42, 40)', 'rgba(254, 245, 213)')">★ More</button>
+                        <button class="tablinks" onclick="openTab(event, '★ Contact', 'rgba(168, 170, 66)', 'rgba(254, 245, 213)')">★ Contact</button>
                     </div>
+                    <div class="section-4-1">
+                        <div id="★ About Me" class="tabcontent" style="display: block;">
+                            <div class="tabcontent-1">
+                                <div>
+                                    <img src="assets/collage.png" alt="pic" class="photostrip" style="margin: 0 -80px 0 -30px;">
+                                </div>
+                                <div style="border-right: 8px dotted rgba(195, 72, 64); height: 300px; width: 1px;"></div>
+                                <div style="position: relative;">
+                                    <img src="assets/cat1.png" alt="" class="stroberi">
+                                    <h2 class="username-header" style="z-index: 1;">𓏵𓏵𓏵𓏵𓏵𓏵</h2>
+                                    <p class="infos" style="color: rgba(117, 19, 17);">Hello, I'm <b>Lili!</b></p>
+                                    <div class="center" style="flex-direction: row; gap: 60px; margin: -50px 0 -30px 0;">
+                                        <div>
+                                        <p class="infos" style="color: rgba(117, 19, 17);"><b>Age:</b> 20</p>
+                                        </div>
+                                        <div>
+                                            <p class="infos" style="color: rgba(117, 19, 17);"><b>Bday:</b> February 11, 2006</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="infos" style="color: rgba(117, 19, 17); font-size: 23px;">Im an aspiring <b>software engineer ★</b> who <br>dreams to work at <b>Pinterest</b> in 
+                                            <b>Toronto, <br>Canada</b>. I aim to master <b>Javascript</b> and <br><b>C++</b>. I am hoping to be a <b>freelance cozy <br>game dev</b> and learn
+                                            from experts in the <br>future!
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
 
-                    <div id="London" class="tabcontent">
-                    <h3>London</h3>
-                    <p>London is the capital city of England.</p>
-                    </div>
+                        <div id="★ Education" class="tabcontent">
+                            <div class="tabcontent-2">
+                                <div class="tabcontent-2-1">
+                                    <div class="tabcontent-2-1-1">
+                                        <p class="infos" style="font-size: 20px; font-weight: 600;">★ Junior High</p>
+                                    </div>
+                                    <p class="school-name">‧₊˚. <span class="text-highlight">CNHS</span> (2018 - 2022) ‧₊˚.</p>
+                                    <ul class="infos" style="font-size: 20px; margin-top: -20px;">
+                                        <li><b>6th Place </b>in Regional ASEAN Digital Art Design 2021</li>
+                                        <li><b>1st Place </b>in Division ASEAN Digital Art Design 2021</li>
+                                        <li><b>3rd Place </b> ICT Tarpaulin Designing 2020</li>
+                                        <li><b>Grade 10: </b>With Honors</li>
+                                        <li><b>Grade 9: </b>With Honors</li>
+                                        <li><b>Grade 8: </b>With Honors</li>
+                                        <li><b>Grade 7: </b>With Honors</li>
+                                    </ul>
+                                </div>
+                                <div class="tabcontent-2-1">
+                                    <div class="tabcontent-2-1-1">
+                                        <p class="infos" style="font-size: 20px; font-weight: 600;">★ Senior High</p>
+                                    </div>
+                                    <p class="school-name">⋆˚࿔ <span class="text-highlight">CFSI</span> (2022 - 2024) ⋆˚࿔</p>
+                                    <ul class="infos" style="font-size: 20px; margin-top: -20px;">
+                                        <li>Graduated included in the <b>upper 10% of ICT strand</b></li>
+                                        <li><b>Grade 12: </b>With High Honors</li>
+                                        <li><b>Grade 11: </b>With High Honors</li>
+                                    </ul>
+                                </div>
+                                <div class="tabcontent-2-1" style="border-right: 0;">
+                                    <div class="tabcontent-2-1-1">
+                                        <p class="infos" style="font-size: 20px; font-weight: 600;">★  College</p>
+                                    </div>
+                                    <p class="school-name">⋆.˚ <span class="text-highlight">MCC</span> (2024 - present) ⋆.˚</p>
+                                    <ul class="infos" style="font-size: 20px; margin-top: -20px;">
+                                        <li><b>Third Year</b> College in <b>Information Technology</b></li>
+                                        <li><b>2nd Year: </b>President Lister</li>
+                                        <li><b>1st Year: </b>President Lister</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="orange">
+                                <img src="assets/header.jpeg" alt="" class="cat" style="border-bottom-left-radius: 7px; border-right: 3px solid rgba(98, 52, 8);">
+                                <p class="infos" style="margin-left: 5px;"> .☘︎ ݁˖.☘︎ ݁˖.☘︎ ݁˖.☘︎ ݁˖.☘︎ ݁˖.☘︎ ݁˖.☘︎ ݁˖.☘︎ ݁˖.☘︎ ݁˖</p>
+                            </div>
+                            
+                        </div>
 
-                    <div id="Paris" class="tabcontent">
-                    <h3>Paris</h3>
-                    <p>Paris is the capital of France.</p> 
-                    </div>
+                        <div id="★ More" class="tabcontent">
+                            <div class="section-4-3">
+                                <div class="section-4-3-1" style="border-bottom: 3px solid rgba(255, 243, 213);">
+                                    <div class="section-4-3-1-1">
+                                        <img src="assets/illu2.jpeg" alt="" class="illus">
+                                    </div>
+                                    <div class="section-4-3-1-1">
+                                        <p class="more-info">𖹭 Soft Skills</p>
+                                        <ul class="infos" style="font-size: 20px; margin-top: -30px;">
+                                            <li>Attention to <u>details</u></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="section-4-3-1">
 
-                    <div id="Tokyo" class="tabcontent">
-                    <h3>Tokyo</h3>
-                    <p>Tokyo is the capital of Japan.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="★ Contact" class="tabcontent">
+                            <h3>★ Contact</h3>
+                            <p>Tokyo is the capital of Japan.</p>
+                        </div>  
                     </div>
+                        
+                </div>
+                <div class="section-5">
+
                 </div>
             </div>
         </div>
