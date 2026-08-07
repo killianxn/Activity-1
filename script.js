@@ -39,3 +39,30 @@ document.addEventListener("DOMContentLoaded", function() {
         activeContent.style.color = btnStyle.color;
     }
 });
+// order and colors must match your 4 tab buttons exactly
+const tabOrder = [
+    { id: '★ About Me',   bg: 'rgba(241, 207, 84)', color: 'rgba(117, 19, 17)' },
+    { id: '★ Education',  bg: 'rgba(232, 175, 107)', color: 'rgba(117, 19, 17)' },
+    { id: '★ More',       bg: 'rgba(190, 42, 40)',  color: 'rgba(254, 245, 213)' },
+    { id: '★ Contact',    bg: 'rgba(168, 170, 66)', color: 'rgba(254, 245, 213)' }
+];
+
+function changeTab(direction) {
+    // find which tab is currently open
+    const currentIndex = tabOrder.findIndex(tab => {
+        const el = document.getElementById(tab.id);
+        return el && el.style.display === 'block';
+    });
+
+    // wrap around: -1 -> loops to last tab, past last -> loops to first
+    let nextIndex = (currentIndex + direction + tabOrder.length) % tabOrder.length;
+    const nextTab = tabOrder[nextIndex];
+
+    // find the matching button by its text content and simulate a click on it
+    const buttons = document.querySelectorAll('.tablinks');
+    buttons.forEach(btn => {
+        if (btn.textContent.trim() === nextTab.id) {
+            openTab({ currentTarget: btn }, nextTab.id, nextTab.bg, nextTab.color);
+        }
+    });
+}
