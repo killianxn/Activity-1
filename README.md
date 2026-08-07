@@ -1,22 +1,22 @@
 ## Creative Personal Introduction Website
-#####Name:  Lian Nicole F. San Diego
-###Course and Section: BSIT 3C
-###Project description###
+Name:  Lian Nicole F. San Diego
+Course and Section: BSIT 3C
+Project description
   ...
 
-###Features of the Website###
+Features of the Website
  ~
  ~
 
-###Technologies Used###
+Technologies Used
  ~ HTML
  ~ CSS
  ~ Javascript
 
-###Live Website Link###
+Live Website Link
  ~ 
 
-###Github Repository Link###
+Github Repository Link
  ~ 
 
-###Screenshot of the Website###
+Screenshot of the Website
