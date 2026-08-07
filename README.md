@@ -1,6 +1,6 @@
 ## Creative Personal Introduction Website
-###Name: ### Lian Nicole F. San Diego
-###Course and Section:### BSIT 3C
+#####Name:  Lian Nicole F. San Diego
+###Course and Section: BSIT 3C
 ###Project description###
   ...
 
