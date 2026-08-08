@@ -3,7 +3,7 @@
 **Course and Section:** BSIT 3C  
   
 Project description  
-    "Lili's Corner" is a retro, cozy-style personal portfolio landing page designed for me, Lian Nicole F. San Diego. The design blends nostalgia with modern web portfolio features, mimicking a vintage desktop application or browser interface with warm, earth-toned scrapbooking aesthetics. Unfortunately, it is not screen size responsive as i lack experience on that part.
+    "Lili's Corner" is a retro, cozy-style personal portfolio landing page designed for me, Lian Nicole F. San Diego. The design blends nostalgia with modern web portfolio features, mimicking a vintage desktop application or browser interface with warm, earth-toned scrapbooking aesthetics. With the help of AI, the responsive design became possible.
   
 Features of the Website  
  - Creative Design Layout  
