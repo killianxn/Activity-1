@@ -336,7 +336,7 @@ html::-webkit-scrollbar-thumb {
     margin: 5px;
     border: 3px solid rgba(98, 52, 8);
     border-radius: 10px;
-    position: fixed;
+    position: absolute;
     margin-top: 10px;
 }
 .section-4-3{
@@ -388,5 +388,144 @@ html::-webkit-scrollbar-thumb {
     background-image: url("assets/greenpolka.jpeg");
     border-top: 3px solid rgba(98, 52, 8);
     border-radius: 0 0 7px 7px;
-    position: sticky;
+    position: absolute;
+}
+
+/* ========================================================= */
+/* 📱 RESPONSIVE DESIGN - MOBILE & TABLET SCREENS            */
+/* ========================================================= */
+
+@media (max-width: 768px) {
+    
+    /* 1. Fluid Containers */
+    /* Changes fixed widths to percentages so they squeeze gracefully */
+    .main-container {
+        width: 95%;
+        max-width: 700px;
+        height: auto;
+        min-height: 800px;
+        padding-bottom: 20px; /* Gives a little breathing room at the bottom */
+    }
+    
+    .mini-container {
+        width: 95%;
+        max-width: 670px;
+        height: auto;
+        min-height: 765px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* 2. Top Header Sections */
+    /* Stacks the header items vertically so they don't squish */
+    .section-1 {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0;
+        gap: 10px;
+    }
+    
+    .section-3 {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .section-3-1, .section-3-2 {
+        width: 100%;
+        border-right: none;
+        padding: 15px 0;
+    }
+
+    /* 3. Tab Container Adjustments */
+    .tabcontent {
+        height: auto;
+        min-height: 370px;
+        overflow-y: hidden; 
+    }
+
+    /* 4. ★ About Me Tab */
+    .tabcontent-1 {
+        flex-direction: column;
+        width: auto;
+        gap: 20px;
+        padding: 20px 10px;
+        text-align: center;
+    }
+    
+    .photostrip {
+        margin: 0 !important; /* Removes the negative margins for mobile */
+        height: 250px;
+    }
+    
+    /* Turns the vertical dotted divider into a horizontal one */
+    .tabcontent-1 > div[style*="border-right"] {
+        border-right: none !important;
+        border-bottom: 8px dotted rgba(195, 72, 64) !important;
+        height: 1px !important;
+        width: 80% !important;
+        margin: 0 auto;
+    }
+    
+    /* Adjust absolute positioned elements */
+    .stroberi {
+        right: 0;
+        top: -30px;
+    }
+    
+    .tabcontent-1 .center {
+        flex-direction: column !important; /* Stacks Age and Bday */
+        gap: 10px !important;
+        margin: 10px 0 !important;
+    }
+
+    /* 5. ★ Education Tab */
+    .tabcontent-2 {
+        grid-template-columns: 1fr; /* Changes 3 columns to 1 column */
+    }
+    
+    .tabcontent-2-1 {
+        border-right: none !important;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    
+    .tabcontent-2-1-1 {
+        position: relative; 
+        margin: 10px auto; 
+    }
+
+    /* 6. ★ More Tab */
+    .section-4-3-1 {
+        flex-direction: column;
+    }
+    
+    .section-4-3-1-1 {
+        border-right: none !important;
+        height: auto;
+        padding-bottom: 15px;
+    }
+    
+    /* Stacks the nested soft skills and hobbies lists */
+    .section-4-3-1-1 .infos > div {
+        flex-direction: column !important;
+        gap: 5px !important;
+    }
+
+    /* 7. ★ Contact Tab */
+    .contact-list {
+        grid-template-columns: 1fr; /* Changes 2 columns to 1 column */
+    }
+    
+    /* Hides the corner cat on mobile so it doesn't overlap your buttons */
+    .cat2 {
+        display: none; 
+    }
+
+    /* 8. Footer Section Fix */
+    .section-5 {
+        width: 100%;
+        position: relative;
+        border-radius: 0 0 7px 7px;
+        margin-top: auto; /* Pushes it to the bottom */
+    }
 }
