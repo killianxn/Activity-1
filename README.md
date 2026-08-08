@@ -21,7 +21,7 @@ Live Website Link
  - https://killianxn.github.io/Activity-1/
   
 Github Repository Link  
- - 
+ - https://github.com/killianxn/Activity-1
   
 Screenshot of the Website  
 <img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/a46ea67a-96fa-4cb3-b121-605a7a46eac2" />
